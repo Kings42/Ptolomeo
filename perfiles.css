@@ -1,0 +1,14 @@
+.caja1{
+    border-radius: 34px 34px 34px 34px;
+   -moz-border-radius: 34px 34px 34px 34px;
+   -webkit-border-radius: 34px 34px 34px 34px;
+   background-color: #f2f2f2;
+   margin-top: 100px;
+   text-align: center;
+   padding-bottom: 20px;
+   padding-top: 20px;
+   padding-right: 100px;
+   padding-left: 100px;
+   margin-left: 60px;
+   margin-right: 200px;
+}

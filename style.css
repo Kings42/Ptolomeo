@@ -1,5 +1,4 @@
 .logo{
-    background-color: white;
     margin-top: 120px;
     padding-bottom: 40px;
    /* padding-left: 20px;
@@ -79,4 +78,13 @@
   margin-left: 30px;
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+.temes{
+        margin-top: 100px;
+        text-align: center;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        padding-right: 100px;
+        padding-left: 100px;
 }
