@@ -12,18 +12,54 @@ body, html, main {
 }
 
 .cd-fixed-bg.cd-bg-1 {
-  background-image: url("test1.jpg");
+  background-image: url("images/test5.jpg");
 }
 .cd-fixed-bg.cd-bg-2 {
-  background-image: url("test2.jpg");
+  background-image: url("images/test2.jpg");
 }
 .cd-fixed-bg.cd-bg-3 {
-  background-image: url("test3.jpg");
+  background-image: url("images/test3.jpg");
 }
 .cd-fixed-bg.cd-bg-4 {
-  background-image: url("test4.jpg");
+  background-image: url("images/test4.jpg");
 }
 
+.cd-fixed-bg.cd-bg-5 {
+  background-image: url("images/test6.jpg");
+}
+.cd-fixed-bg.cd-bg-6 {
+  background-image: url("images/test7.jpg");
+}
+.cd-fixed-bg.cd-bg-7 {
+  background-image: url("images/test8.jpg");
+}
+.cd-fixed-bg.cd-bg-8 {
+  background-image: url("images/test9.jpg");
+}
+.cd-fixed-bg.cd-bg-9 {
+  background-image: url("images/test17.jpg");
+}
+.cd-fixed-bg.cd-bg-10 {
+  background-image: url("images/test10.jpg");
+}
+.cd-fixed-bg.cd-bg-11 {
+  background-image: url("images/test11.jpg");
+}
+.cd-fixed-bg.cd-bg-12 {
+  background-image: url("images/test12.jpg");
+}
+.cd-fixed-bg.cd-bg-13 {
+  background-image: url("images/test13.jpg");
+}
+.cd-fixed-bg.cd-bg-14 {
+  background-image: url("images/test14.jpg");
+}
+.cd-fixed-bg.cd-bg-15 {
+  background-image: url("images/test15.jpg");
+}
+.cd-fixed-bg.cd-bg-16 {
+  background-image: url("images/test15.jpg");
+}
 .cd-scrolling-bg {
 	min-height: 50%;
 }

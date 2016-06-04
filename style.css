@@ -88,3 +88,36 @@
         padding-right: 100px;
         padding-left: 100px;
 }
+
+.about{
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.caja1{
+  margin-left: 50px;
+  margin-right: 700px;
+  margin-top: 80px;
+  text-align: center;
+  opacity: 0.1;
+  background-color: grey;
+  border-radius: 41px 41px 41px 41px;
+-moz-border-radius: 41px 41px 41px 41px;
+-webkit-border-radius: 41px 41px 41px 41px;
+border: 13px double #000000;
+padding-bottom: 30%;
+}
+
+.sombra{
+  text-shadow: 3px 3px 4px rgba(152, 150, 150, 1);
+}
+
+.contenido{
+  opacity: 10;
+}
+
+.boton-color{
+  background-color: grey;
+}

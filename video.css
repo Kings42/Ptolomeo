@@ -1,0 +1,20 @@
+video#bgvid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(pruebavideo.mp4) repeat;
+    background-size: cover;
+}
+
+<video autoplay loop poster="polina.jpg" id="bgvid">
+    <source src="vidso.mp4" type="video/mp4">
+</video>
