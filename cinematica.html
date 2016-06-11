@@ -69,23 +69,17 @@
     var txtAceleracion = document.getElementById("textAceleracion");
     var txtResultado = document.getElementById("textResultado");
     var btnCalcular = document.getElementById("botonCalcular");
-
     function calcularResultado() {
         var masa = parseFloat(txtMasa.value);
         var aceleracion = parseFloat(txtAceleracion.value);
         var resultado = masa * aceleracion;
-
         txtResultado.value = resultado + " Newtons";
     }
-
   </script>
 
 
   <!----------------------------------------------------------------------------------------->
-  <div class="cd-fixed-bg cd-bg-2">
-  </div>
-
-  <div class = "ecuacion">
+     <div class = "ecuacion">
     <h3><font color="#666666">Ley de la gravitacion universal</font></h3>
     <p><font color="#666666">Describe el movimiento de los cuerpos celestes por la interaccion
       de los campos gravitatorios de un cuerpo con uno otro. Es decir, la fuerza es directamente proporcional
@@ -100,90 +94,110 @@
       <label class="active" for="first_name2">Masa del segundo cuerpo en Kilogramos (kg)</label>
     </div>
     <div class="input-field col s6">
-      <input value="" id="mts1" type="text" class="validate">
+      <input value="" id="r1" type="text" class="validate">
       <label class="active" for="first_name2">Distancia entre los dos cuerpos en metros (m)</label>
     </div>
     </div>
 
     <div class = "submit">
-      <button onclick="calcularResultadoUno()" id = "botonCalcular1" class="btn waves-effect waves-light" type="submit" name="action">Calcular
+    <button id = "botonCalcularLGU" OnClick="CalcularLGU()" class="btn waves-effect waves-light" type="submit" name="action">Calcular
       <i class="material-icons right"></i>
     </button>
     </div>
     <div class="row resul">
     <div class="input-field col s6">
-      <input value="" id="resultado1" type="text" class="validate">
-      <label class="active">Resultado:</label>
+      <input value="" id="resul1" type="text" class="validate">
+      <label class="active" for="first_name2">Resultado:</label>
     </div>
     </div>
   </div>
 
   <script>
-    var 2txtMasa = document.getElementById("kg1");
-    var 2txtMasa2 = document.getElementById("kg2");
-    var 2txtDistancia1 = document.getElementById("mts1");
-    var 2txtResultado1 = document.getElementById("resultado1");
-    var 2btnCalcular1 = document.getElementById("botonCalcular1");
-
-    function calcularResultadoUno(){
-
-        resultado1.value = " Newtons";
+    var txtkg1 = document.getElementById("kg1");
+    var txtkg2 = document.getElementById("kg2");
+    var txtr1 = document.getElementById("r1");
+    var txtresul1 = document.getElementById("resul1");
+    var btnCalcular1 = document.getElementById("botonCalcularLGU");
+    function CalcularLGU() {
+        var masa1 = parseFloat(txtkg1.value);
+        var masa2 = parseFloat(txtkg2.value);
+        var distancia1 = parseFloat(txtr1.value);
+        var resultado1 = 6.673e-11*((masa1*masa2)/(distancia1*distancia1));
+        txtresul1.value = resultado1 + " Newtons";
     }
-
   </script>
-
-  <!----------------------------------------------------------------------------------------->
+ <!------------------------------------------------------------------------------>
   <div class="cd-fixed-bg cd-bg-3">
   </div>
-
   <div class = "ecuacion">
     <h3><font color="#666666">Velocidad del impacto</font></h3>
     <p><font color="#666666">En caida libre es la velocidad de un objeto justo antes de
       colisionar o impactar con el suelo.</font></p>
     <div class="row vari">
     <div class="input-field col s6">
-      <input value="" id="first_name2" type="text" class="validate">
+      <input value="" id="Altura" type="text" class="validate">
       <label class="active" for="first_name2">Altura desde la cual cae el objeto en metros (m)</label>
     </div>
     </div>
-
     <div class = "submit">
-      <button class="btn waves-effect waves-light" type="submit" name="action">Calcular
+        
+    <button id = "botonCalcularAltura" OnClick="CalcularAltura()" class="btn waves-effect waves-light" type="submit" name="action">Calcular
       <i class="material-icons right"></i>
     </button>
+        
+      
     </div>
     <div class="row resul">
+        
+            
     <div class="input-field col s6">
-      <input value="" id="first_name2" type="text" class="validate">
+      <input value="" id="resulAltura" type="text" class="validate">
       <label class="active" for="first_name2">Resultado:</label>
     </div>
     </div>
   </div>
-
+  <script>
+      var txtAltura = document.getElementById("Altura");
+      var txtresulAltura2 =document.getElementById("resulAltura");
+      function CalcularAltura() {
+          var varAltura =parseFloat(txtAltura.value);
+          var varResulAltura = Math.sqrt(2*9.8*varAltura);
+          txtresulAltura2.value = varResulAltura + " m/s";
+      }
+      </script>
   <!----------------------------------------------------------------------------------------->
   <div class="cd-fixed-bg cd-bg-4">
   </div>
-
   <div class = "ecuacion">
     <h3><font color="#666666">Tiempo de caida</font></h3>
     <p><font color="#666666">En caida libre es el tiempo que duro un cuerpo en alcanzar el suelo
       durante una caida.</font></p>
     <div class="row vari">
     <div class="input-field col s6">
-      <input value="" id="first_name2" type="text" class="validate">
+      <input value="" id="AlturaTC" type="text" class="validate">
       <label class="active" for="first_name2">Altura desde la cual cae el objeto en metros (m)</label>
     </div>
     </div>
-
     <div class = "submit">
-      <button class="btn waves-effect waves-light" type="submit" name="action">Calcular
+        
+    <button id = "botonTiempoCaida" OnClick="CalcularTC()" class="btn waves-effect waves-light" type="submit" name="action">Calcular
       <i class="material-icons right"></i>
     </button>
+        
     </div>
     <div class="row resul">
     <div class="input-field col s6">
-      <input value="" id="first_name2" type="text" class="validate">
+      <input value="" id="resulTC" type="text" class="validate">
       <label class="active" for="first_name2">Resultado:</label>
     </div>
     </div>
   </div>
+  <script>
+      var txtAlturaTC = document.getElementById("AlturaTC");
+      var txtresulTC =document.getElementById("resulTC");
+      function CalcularTC() {
+          var varAlturaTC =parseFloat(txtAlturaTC.value);
+          var varResulTC = Math.sqrt((2*varAlturaTC)/9.8);
+          txtresulTC.value = varResulTC + " m/s";
+      }
+  </script>
