@@ -1,0 +1,161 @@
+<head>
+    <title>Ptolomeo</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./ecuaciones.css">
+      <link rel="stylesheet" href="./images.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+
+<body>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper barra">
+        <a href="#!" class="brand-logo">Ptolomeo</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="about.html">About</a></li>
+          <li><a href="singin.html">Sign In</a></li>
+          <li><a href="singup.html">Sing Up</a></li>
+          <li><a href="Index.html">Home</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+<div class = "ecu">
+  <h2><font color ="#333333">Fisica moderna<h2><font color ="grey">
+</div>
+
+<div class="cd-fixed-bg cd-bg-5">
+</div>
+  <div class = "ecuacion">
+    <h3><font color="#666666">Dilatacion temporal</font></h3>
+    <p><font color="#666666">Cuanto mas cerca se encuentre un cuerpo a la velocidad de la luz, este mismo
+       percibira su entorno en un tiempo menor.</font></p>
+    <div class="row vari">
+    <div class="input-field col s6">
+      <input value="" id="textInicial" type="text" class="validate">
+      <label class="active" for="first_name2">Tiempo inicial en segundos (s)</label>
+    </div>
+    <div class="row">
+    <div class="input-field col s6">
+      <input value="" id="textObservador" type="text" class="validate">
+      <label class="active" for="first_name2">Velocidad del observador en movimiento en metros sobre segundos (m/s)</label>
+    </div>
+    </div>
+    </div>
+
+    <div class = "submit">
+      <button onclick="calcularDilatacion()" id = "botonCalcular1" class="btn waves-effect waves-light" type="submit" name="action">Calcular
+      <i class="material-icons right"></i>
+    </button>
+    </div>
+    <div class="row resul">
+    <div class="input-field col s6">
+      <input value="" id="textResultadod" type="text" class="validate">
+      <label class="active" for="first_name2">El tiempo para el observador en movimiento en segundos (s) pasa a ser de:</label>
+    </div>
+    </div>
+  </div>
+      
+  <script>
+      var txtInicial =
+      document.getElementById("textInicial");
+      var txtObservador =
+      document.getElementById("textObservador");var txtResultadod =
+      document.getElementById("textResultadod");var btnCalcular =
+      document.getElementById("botonCalcular1");function calcularDilatacion() {
+          var inicial = parseFloat(txtInicial.value);
+          var observador =
+          parseFloat(txtObservador.value);
+          var resultadod = inicial * Math.sqrt (1-(observador/300000000)*(observador/300000000))
+          txtResultadod.value = resultadod + "segundos";
+      } </script>
+
+  <!----------------------------------------------------------------------------------------->
+  <div class="cd-fixed-bg cd-bg-6">
+  </div>
+  <div class = "ecuacion">
+    <h3><font color="#666666">Contraccion de Lorentz</font></h3>
+    <p><font color="#666666">Cuanto mas cerca se encuentre un cuerpo a la velocidad de la luz, este mismo
+       contraera su longitud.</font></p>
+    <div class="row vari">
+    <div class="input-field col s6">
+      <input value="" id="first_name2" type="text" class="validate">
+      <label class="active" for="first_name2">Longitud inicial del cuerpo en metros (m)</label>
+    </div>
+    <div class="row">
+    <div class="input-field col s6">
+      <input value="" id="first_name2" type="text" class="validate">
+      <label class="active" for="first_name2">Velocidad del observador en movimiento en metros sobre segundos (m/s)</label>
+    </div>
+    </div>
+    </div>
+    <div class = "submit">
+      <button class="btn waves-effect waves-light" type="submit" name="action">Calcular
+      <i class="material-icons right"></i>
+    </button>
+    </div>
+    <div class="row resul">
+    <div class="input-field col s6">
+      <input value="" id="first_name2" type="text" class="validate">
+      <label class="active" for="first_name2">La longitud del observador en movimiento en metros (m) pasa a ser de:</label>
+    </div>
+    </div>
+  </div>
+  <!----------------------------------------------------------------------------------------->
+  <div class="cd-fixed-bg cd-bg-7">
+  </div>
+  <div class = "ecuacion">
+    <h3><font color="#666666">Relacion masa-energia</font></h3>
+    <p><font color="#666666">La masa es equivalente a la energia, y viceversa.</font></p>
+    <div class="row vari">
+    <div class="input-field col s6">
+      <input value="" id="first_name2" type="text" class="validate">
+      <label class="active" for="first_name2">Masa del cuerpo en Kilogramos (kg)</label>
+    </div>
+    </div>
+    <div class = "submit">
+      <button class="btn waves-effect waves-light" type="submit" name="action">Calcular
+      <i class="material-icons right"></i>
+    </button>
+    </div>
+    <div class="row resul">
+    <div class="input-field col s6">
+      <input value="" id="first_name2" type="text" class="validate">
+      <label class="active" for="first_name2">La energia del cuerpo en Joules (J) es de:</label>
+    </div>
+    </div>
+  </div>
+  <!----------------------------------------------------------------------------------------->
+  <div class="cd-fixed-bg cd-bg-8">
+  </div>
+  <div class = "ecuacion">
+    <h3><font color="#666666">Radio de Schwarzschild</font></h3>
+    <p><font color="#666666">Describe el radio que tiene un agujero negro con respecto a su masa. Tambien
+      nos ayuda a predecir el radio que tendrian que tener ciertos cuerpos si estos fueran agujeros negros, de igual forma
+      podemos predecir que tanto deberiamos comprimir un objeto, haciendo que conserve su masa pero su volumen disminuya, haciendolo
+      muy denso para finalmente volverlo un agujero negro.</font></p>
+    <div class="row vari">
+    <div class="input-field col s6">
+      <input value="" id="first_name2" type="text" class="validate">
+      <label class="active" for="first_name2">Masa del cuerpo en Kilogramos (kg)</label>
+    </div>
+    </div>
+    <div class = "submit">
+      <button class="btn waves-effect waves-light" type="submit" name="action">Calcular
+      <i class="material-icons right"></i>
+    </button>
+    </div>
+    <div class="row resul">
+    <div class="input-field col s6">
+      <input value="" id="first_name2" type="text" class="validate">
+      <label class="active" for="first_name2">El radio del agujero negro producido por ese cuerpo en metros (m) es de:</label>
+    </div>
+    </div>
+  </div>
+  <!----------------------------------------------------------------------------------------->
